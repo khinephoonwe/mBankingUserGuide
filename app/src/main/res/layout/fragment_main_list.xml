@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".fragments.MainListActivityFragment"
+    tools:showIn="@layout/activity_main_list">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_mbtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="What is Mobile Banking?"
+                    android:textAppearance="?android:textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/tv_mbparagraph"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="Mobile banking refers to the use of a smartphone or other cellular device to perform online banking tasks while away from your home computer, such as monitoring account balances, transferring funds between accounts, bill payment and locating an ATM."
+                    android:textAppearance="?android:textAppearanceSmall" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_how"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="How to use AYA mBanking?"
+                    android:textAppearance="?android:textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/tv_learn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="In this mBanking User Guide, we will give knowledge of using AYA mBanking system."
+                    android:fontFamily="sans-serif-light"
+                    android:lineSpacingMultiplier="1.2"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:paddingBottom="@dimen/margin_medium"/>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:paddingRight="@dimen/margin_xlarge"
+                        android:src="@drawable/mbanking2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:src="@drawable/mbanking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_learning_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Learning Tips!"
+                    android:textAppearance="?android:textAppearanceLarge" />
+
+                <TextView
+                android:id="@+id/tv_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. How to use Transfer Transaction"
+                android:fontFamily="sans-serif-light"
+                android:lineSpacingMultiplier="1.2"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:paddingBottom="@dimen/margin_medium"/>
+
+                <TextView
+                    android:id="@+id/tv_tips_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. How to use Transfer Transaction"
+                    android:fontFamily="sans-serif-light"
+                    android:lineSpacingMultiplier="1.2"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:paddingBottom="@dimen/margin_medium"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
